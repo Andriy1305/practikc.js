@@ -21,8 +21,8 @@
 // const number = prompt("кількість хвилин");
 // const hours = Math.floor(number / 60);
 // const minutes = number % 60;
-// const modifHours = String(hours).padStart(2, "0"); 
-// const modifMinutes = String(minutes).padStart(2, "0"); 
+// const modifHours = String(hours).padStart(2, "0");
+// const modifMinutes = String(minutes).padStart(2, "0");
 // console.log(`${modifHours}:${modifMinutes}`);
 
 //3. Напишіть цикл, який виводить в консоль
@@ -57,22 +57,85 @@
 // Якщо вона має значення '1', то у змінну result запишемо 'winter', якщо має значення '2' - 'spring' і т.д.
 // Розв'яжіть завдання через switch-case.
 
-let num = Number(prompt("1 or 2 or 3 or 4"));
-let result = "";
-switch (num) {
-    case 1:
-        result = "winter";
-        break
-    case 2:
-        result = "spring";
-        break
-    case 3:
-        result = "summer";
-        break
-    case 4:
-        result = "autemn";
-        break
-    default:
-        result = " Attention (1 to 4)!"
-}
-console.log(result);
+// let num = Number(prompt("1 or 2 or 3 or 4"));
+// let result = "";
+// switch (num) {
+//     case 1:
+//         result = "winter";
+//         break
+//     case 2:
+//         result = "spring";
+//         break
+//     case 3:
+//         result = "summer";
+//         break
+//     case 4:
+//         result = "autemn";
+//         break
+//     default:
+//         result = " Attention (1 to 4)!"
+// }
+// console.log(result);
+
+
+//5. Напишіть код, який буде питати
+//логін за допомогою prompt и логіровати результат
+//в консоль браузера
+
+//Якщо користувач вводить "admin",
+//то prompt запрашує пароль.
+//Якщо нічого не ввели чи нажали Cancel
+//вивести в alert рядок "Cancel!"
+//В противному випадку вивести рядок "Who are you?!"
+
+//Пароль перевіряти так:
+//Якщо введен пароль "123456",
+//то вивести рядок "Welcome, boss!"
+//в іншому випадку виводити рядок "Wrong password!"
+
+
+// const login = prompt("Enter your login");
+// console.log(login);
+// if (login === "admin") {
+//     const password = prompt("Enter your password")
+//     if (password === "123456") {
+//         alert("Welcome, boss!");
+//     } else {
+//         alert("Wrong password!");
+//     }
+// } else if (login === "" || login === null) {
+//     alert("Cancel")
+// } else {
+//     alert("Who are you?!");
+// }
+
+
+// 6. Напишіть функцію checkNumber(num), яка перевіряє число:
+// Якщо число ділитися на 3 повертати "fizz"
+// Якщо ділитися на 5 повертати "buzz"
+// Якщо ділитися на 3 і на 5 повернути "fizzbuzz"
+// Додайте перевірку, що параметр дійсно є числом (в іншому випадку
+// функція має повертати "Not a number")
+// В якості дефолтного випадку повернути "Error!"
+
+// function checkNumber(num) {
+//     if (typeof num !== "number") {
+//         return "Not a number";
+//     } 
+//     if (num % 3 === 0 && num % 5 === 0) {
+//         return "fizzbuzz";
+//     }
+//     if (num % 3 === 0) {
+//         return "fizz";
+//     } 
+//     if (num % 5 === 0) {
+//         return "buzz";
+//     } 
+//     return "Error!";
+// }
+
+
+// console.log(checkNumber(15));
+// console.log(checkNumber(30));
+// console.log(checkNumber(3));
+// console.log(checkNumber("bgviz"));
